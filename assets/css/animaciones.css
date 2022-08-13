@@ -1,0 +1,115 @@
+/* Asignamos la animacion para el logo y agregamos propiedades */
+.rebote {
+  animation: subir-bajar 0.5s alternate infinite ease-in;
+}
+
+/* Creamos la animación Rebote y transformacion  (con keyframes) */
+
+@keyframes subir-bajar {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  75% {
+    transform: skewX(-40deg);
+  }
+}
+
+
+/* Asignamos la animación al elemento Entrada */
+.descolgado {
+  animation: descolgado 3s;   
+  transform-origin:left;
+  animation-fill-mode: forwards;
+}
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes descolgado {
+  10% {
+    transform: rotate(110deg);
+  }
+
+  30% {
+    transform: rotate(55deg);
+  }
+
+  50% {
+    transform: rotate(80deg);
+  }
+
+  70% {
+    transform: rotate(65deg);
+  }
+
+  90% {
+    transform: rotate(70deg);
+  }
+}
+
+
+/* Loading...... */
+.square {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background-color: #e6d9d9;
+}
+
+.load-7{
+  position: absolute;
+  z-index: 1;
+  background: #070d1b;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  z-index: -1;
+}
+
+.load-7 {
+  animation: closeLoading 2s ;
+  
+}
+
+.load-7 .square {
+  animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingG {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(70px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+
+@keyframes closeLoading {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  70%{
+    z-index: 1;
+    opacity: 1;
+  }
+  98%{
+    z-index: 1;
+    opacity: 0;
+  }
+  100%{
+    z-index: -1;
+  }
+}

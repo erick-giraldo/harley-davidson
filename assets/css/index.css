@@ -7,7 +7,7 @@
 @import "./pages/productos.css";
 @import "./pages/blog.css";
 @import "./pages/contacto.css";
-
+@import "./animaciones.css";
 
 * {
   box-sizing: border-box;
