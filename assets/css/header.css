@@ -49,7 +49,7 @@
 
 /**************** Para Moviles **********************/
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
    .header-container {
     width: 100%;
     height: 60px;

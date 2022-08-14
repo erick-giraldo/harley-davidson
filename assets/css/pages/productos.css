@@ -80,7 +80,7 @@
 
 /**************** Para Moviles **********************/
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
 .grid-padre-productos{
     grid-template-areas:
         "header"
