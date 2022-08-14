@@ -40,6 +40,9 @@
   color: #fec544;
 }
 
+.menu-container .menuIcon {
+  display: none;
+}
 /**************** Para Tablet **********************/
 @media (max-width: 768px) {
   .header-container {
@@ -87,6 +90,7 @@
   .menu-container .menuIcon {
     filter: invert(1);
     width: 1.5625rem;
+    display: block;
   }
 
 } 
