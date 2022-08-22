@@ -13,11 +13,18 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  color: #747474;
-  font-family: "Inter", sans-serif;
-  overflow: hidden;
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
 }
+
+.hijo{
+  height: calc(100vh - 55px);
+}
+
+
+
+
