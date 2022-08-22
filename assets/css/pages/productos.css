@@ -1,17 +1,9 @@
-.grid-padre-productos {
-    display: grid;
-    grid-template-areas:
-      "header main"
-      "header main"
-      "footer footer";
-      grid-template-columns: 300px auto;
-  }
-  
+
   .productos-container {
-  margin: 20px;
-  overflow: auto;
-  height: calc(100vh - 95px);
-  position: relative;
+    overflow: auto;
+    position: relative;
+    color: #747474;
+    height: calc(100vh - 55px);
 }
 
 .productos-container .productos-referencia {
@@ -22,29 +14,12 @@
 
 .productos-container .productos-contenido {
   background-color: #e6e6e6;
-  display: grid;
-  grid-template-areas:
-  "columnaA"
-  "columnaB"
-  "columnaC";
-  grid-template-columns: auto;
   gap: 20px;
   height: auto;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 20px;
 }
 
-.productos-contenido .productos-containerA {
-  grid-area: columnaA;
-}
-
-.productos-contenido .productos-containerB {
-  grid-area: columnaB;
-}
-
-.productos-contenido .productos-containerC {
-    grid-area: columnaC;
-  }
 
 .productos-contenido p {
   text-align: justify;
@@ -52,13 +27,12 @@
 }
 
 .productos-section{
+  gap:10px;
+  margin-left: 0px;
   display: flex;
-  gap:10px
+  justify-content: center;
 }
 
-.productos-section img{
-  width: 300px;
-}
 
 
 /**************** Para Tablet **********************/
@@ -69,28 +43,22 @@
 
 .productos-section{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+.productos-container{
+    height: calc(100vh - 115px);
 }
 
-.productos-section img{
-  width: 300px;
-}
+
 }
 
 
 /**************** Para Moviles **********************/
 
 @media (max-width: 430px) {
-.grid-padre-productos{
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: auto;
-}
 
 .productos-container{
-    height: calc(100vh - 155px);
+    height: calc(100vh - 115px);
 }
 
 .productos-container .productos-referencia{
@@ -102,12 +70,10 @@
 }
 
 .productos-section{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.productos-section img{
-  width: 250px;
-}
-    
+ 
 }

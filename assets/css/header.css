@@ -1,31 +1,13 @@
-/**************** Header **********************/
-.header-container {
+.menu {
   background-color: #070d1b;
-  grid-area: header;
-  height: calc(100vh - 55px);
-  display: grid;
-  grid-template-rows: max-content auto;
 }
 
-.header-container img {
-  margin: auto;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
 }
-
-/**************** Menu **********************/
-
-.menu-container {
-  align-self: center;
-}
-
-.menu-container ul>li {
-  list-style: none;
-  padding: 10px 0;
-}
-
-.menu-container ul>li:hover {
-  opacity: 0.5;
-}
-
 .menu-container ul>li>a {
   text-decoration: none;
   font-size: 15px;
@@ -35,62 +17,63 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
-
+.menu-container ul>li {
+  list-style: none;
+  padding: 10px 0;
+}
 .menu-container ul>li>a.active {
   color: #fec544;
 }
 
-.menu-container .menuIcon {
+.menu-container .menuIcon{
   display: none;
 }
-/**************** Para Tablet **********************/
-@media (max-width: 768px) {
-  .header-container {
-    width: 200px;
+
+/* Tablet y Responsive */
+@media (max-width: 993px) {
+  .menu {
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
   }
-}
-
-/**************** Para Moviles **********************/
-
-@media (max-width: 430px) {
-   .header-container {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 12px;
+  .menu img{
+      width: 65px;
+      height: 60px;
   }
 
-  .header-container img {
-    margin: 0;
-    width: 60px;
-  }
-
- .menu-container{
-  z-index: 1;
- }
-
-  .menu-container>ul {
-    display: none;
+  .menu-container > ul{
+      display: none;
   }
 
   #menuLite:checked+ul {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    background: #070d1b;
-    margin: 0;
-    padding: 0.5rem;
-    border-top: 0.5px solid #3f4551;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 100%;
+      background: #070d1b;
+      margin: 0;
+      padding: 0.5rem;
+      border-top: 0.5px solid #3f4551;
+    }
+   
+  .menu-container label{
+      border: 1px solid #fff;
+      border-radius: 5px;
   }
-
-  .menu-container .menuIcon {
-    filter: invert(1);
-    width: 1.5625rem;
-    display: block;
+  
+  .menu-container .menuIcon{
+      display: block;
+      width: 27px;
+      margin: 5px;
+      height: 18px;
   }
-
-} 
+}
+@media (min-width: 1024px) {
+.menu img{
+width: 150px;
+align-self: center;
+}
+}
