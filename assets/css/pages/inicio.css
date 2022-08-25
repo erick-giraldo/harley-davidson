@@ -55,53 +55,18 @@
         display: flex;
         flex-direction: column-reverse;
     }
-}
+ }
 
 /* Moviles */
-@media (max-width: 320px) {
+ @media(max-width: 320px) {
     .container-both .contenido-imagen > img{
-        max-width: 260px!important;
-        margin-top: 16rem!important;
+        margin-top: 16rem !important;
     }
-    
 }
 
-@media (max-width: 414px) {
+@media(max-width: 375px) {
     .container-both .contenido-imagen > img{
-        max-width: 260px!important;
-        margin-top: 6rem;
+        margin-top: 9rem;
     }
-    
-}
-@media (max-width: 430px) {
-    .container-both .contenido-imagen > img{
-        max-width: 360px;
-    }
-    
 }
 
-@media(min-width: 431px) and (max-width: 560px) {
-    .container-both .contenido-imagen > img{
-        max-width: 400px;
-    }
-    
-}
-
-@media(min-width: 1024px) {
-    .container-both{
-        align-items: center;
-
-    }
-    .container-both .contenido-imagen > img{
-        max-width: 400px;
-    }
-    
-}
-
-@media(min-width: 1440px) {
-    .container-both .contenido-imagen > img{
-        max-width: 600px;
-    }
-    
-}
-    
