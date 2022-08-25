@@ -57,7 +57,22 @@
     }
 }
 
+/* Moviles */
+@media (max-width: 320px) {
+    .container-both .contenido-imagen > img{
+        max-width: 260px!important;
+        margin-top: 16rem!important;
+    }
+    
+}
 
+@media (max-width: 414px) {
+    .container-both .contenido-imagen > img{
+        max-width: 260px!important;
+        margin-top: 6rem;
+    }
+    
+}
 @media (max-width: 430px) {
     .container-both .contenido-imagen > img{
         max-width: 360px;
