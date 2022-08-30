@@ -1,0 +1,8 @@
+$icons: ("facebook": #199cf7, "youtube": #f30001, "instagram": #d53678, "twitter": #199cf7);
+
+@each $red, $color in $icons {
+ .fa-#{$red}{
+      color: $color;
+    }
+  }
+  
