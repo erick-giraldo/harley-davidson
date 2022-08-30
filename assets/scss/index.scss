@@ -1,0 +1,34 @@
+@import "./global/condicionales";
+@import "./global/variables";
+@import "./global/mapas";
+@import "./global/normalize";
+@import "./global/cdn";
+@import "header";
+@import "footer";
+@import "animaciones";
+
+@import "./pages/inicio";
+@import "./pages/blog";
+
+ /* CSS  falta terminar la migracias a SASS*/
+
+@import "./pages/inicio.css";
+@import "./pages/nosotros.css";
+@import "./pages/productos.css";
+@import "./pages/contacto.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: $color-text-global;
+  font-family: $font-global;
+}
+
+.hijo {
+  height: calc(100vh - 55px);
+}
