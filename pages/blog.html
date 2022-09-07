@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harley-Davidson® - Blog</title>
+    <!-- Metas -->
+    <meta
+      name="description"
+      content="¡Consulte nuestro blog para obtener artículos interesantes e informativos sobre motocicletas! ¡Entonces, visítenos cerca de Buffalo, NY para obtener más información!"
+    />
+    <meta name="author" content="Erick Giraldo" />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -14,10 +21,9 @@
     <link rel="stylesheet" href="../assets/css/index.css" />
     <link
       rel="shortcut icon"
-      href="../assets/images/favicon.png"
+      href="../assets/images/favicon.webp"
       type="image/x-icon"
     />
-    <title>Blog</title>
   </head>
 
   <body>
@@ -34,7 +40,7 @@
     <div class="container-fluid padre">
       <div class="row hijo">
         <header class="col-lg-2 col-md-12 col-sm-12 menu">
-          <img class="rebote" src="../assets/images/logo.png" alt="logo" />
+          <img src="../assets/images/logo.webp" alt="logo" />
           <nav class="menu-container">
             <input type="checkbox" name="menuLite" id="menuLite" hidden="" />
             <ul>
@@ -49,125 +55,153 @@
             <label for="menuLite">
               <img
                 class="menuIcon"
-                src="../assets/images/menu-lite.svg"
-                alt=""
+                src="../assets/images/menu-lite.webp"
+                alt="menuLite"
               />
             </label>
           </nav>
         </header>
-        <main class="col-lg-10 col-md-12 col-sm-12 blog-container">
-                <div class="descolgado blog-referencia">
-                  <h3>Blog</h3>
-                </div>
-                <div class="blog-entrada">
-                  <p>Autor</p>
-                  <p>Categoria</p>
-                  <p>5 minutos</p>
+        <main class="col-lg-10 col-md-12 col-sm-12 main-container">
+                <div class="referencia">
+                  <nav aria-label="breadcrumb">
+                    <ol class="descolgado breadcrumb">
+                      <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                  </nav> 
                 </div>
                 <div class="blog-contenido">
-                  <div class="blog-containerA">
-                    <img src="" alt="" />
-                    <div>
-                      <h1>RECONSTRUIDAS. REDISEÑADAS. REINVENTADAS.</h1>
-                      <p>
-                        Con esta idea, ¿por qué no te acercas a tu concesionario local y
-                        pruebas alguna de las nuevas Softail® de la renovada gama 2018/19?
-                        Dentro de la gama Softail hay tres subgrupos claramente
-                        diferenciados: Custom, con las Fat Boy® y Street Bob® como
-                        principales ejemplos; Performance, como la FXDR™ 114 y la Fat
-                        Bob®, y Touring, cuyos principales exponentes serían la Sport
-                        Glide® y la Heritage Classic. ¡Tendrás mucho donde elegir cuando
-                        llegues a la sala de exposición!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="blog-containerB">
-                    <h1>Custom</h1>
-                    <p>
-                      Hazla única y personal; marca las distancias con una motocicleta
-                      custom. Demuestra tu individualismo con innumerables posibilidades
-                      de maneras que solo tú puedes imaginar. Auténtica al 100%, con el
-                      motor Milwaukee-Eight® Big Twin disponible en cilindradas de 107 o
-                      114 y el reinventado bastidor Softail para ofrecerte una respuesta
-                      como jamás habías conocido.
-                    </p>
-                    <h1>Performance</h1>
-                    <p>
-                      Veloces en las rectas y ágiles en las curvas, nuestras motos de
-                      altas prestaciones rezuman actitud. Las horquillas de estilo
-                      deportivo con tecnología de cartucho único mejoran la respuesta de
-                      la dirección, la frenada y la maniobrabilidad.
-                    </p>
-                  </div>
-                  <a href="http://facebook.com" target="_blank">Compartir</a>
-                  <div class="blog-containerC">
-                    <h3>Sigue Leyendo</h3>
-                    <div>
-                      <div>
-                        <img
-                          src="../assets/images/modelos/blog-1-2.jpeg"
-                          alt="blog-1-2.jpeg"
-                          width="200"
-                        />
-                      </div>
-                      <div>
-                        <h5>ENERO 8 2022</h5>
-                        <h5>
-                          A MENUDO OLVIDADO: EL MANTENIMIENTO DE LA CORREA DE TRANSMISIÓN
-                        </h5>
-                        <p>
-                          Por su propio diseño, la correa de transmisión de una
-                          motocicleta Harley-Davidson® es algo fácil de pasar por alto,
-                          pero t...
+                  <div class="row blog-row">
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-60 ">
+                            <div class="blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1.webp" alt="post-img" class="img-fluid">                            
+                            </div>
+                            <span class="rebote position-absolute blog-new-badge bounce">New</span>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Simple and useful HTML layout</h2>
+                        </a>                    
+                        <p class="blog-pt-30">
+                            There is a clickable image with beautiful hover effect and active title link for each post item. 
+                            Left side is a sticky menu bar. Right side is a blog content that will scroll up and down.
                         </p>
-                        <button onclick="location.href='#'" target="_blank" type="button">
-                          Ver más
-                        </button>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img
-                          src="../assets/images/modelos/blog-1-3.jpeg"
-                          alt="blog-1-3.jpeg"
-                          width="200"
-                        />
-                      </div>
-                      <div>
-                        <h5>MARZO 15 2022</h5>
-                        <h5>MÚSICA & MOTOS EN PORTUGAL - 28º EUROPEAN H.O.G.® RALLY</h5>
-                        <p>
-                          El 28º European H.O.G. Rally, celebrado el fin de semana del 13
-                          al 16 de junio de 2019, ha vuelto a saldarse con un fenome...
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Travel . Events</span>
+                            <span class="blog-color-primary">June 24, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>36 comments</span>
+                            <span>by Admin Nat</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-60 ">
+                            <div class=" blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1-2.webp" alt="post-img" class="img-fluid">                            
+                            </div>
+                            <span class="rebote position-absolute blog-new-badge bounce">New</span>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Multi-purpose blog template</h2>
+                        </a>                    
+                        <p class="blog-pt-30 ">
+                            Xtra Blog is a multi-purpose HTML CSS template from TemplateMo website. 
+                            Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width.
                         </p>
-                        <button onclick="location.href='#'" target="_blank" type="button">
-                          Ver más
-                        </button>
-                      </div>
-                    </div>
-          
-                    <div>
-                      <div>
-                        <img
-                          src="../assets/images/modelos/blog-1-4.jpeg"
-                          alt="blog-1-4.jpeg"
-                          width="200"
-                        />
-                      </div>
-                      <div>
-                        <h5>JUNIO 27 2022</h5>
-                        <h5>DAREDEVILS - UN SIGLO DE ESPECTÁCULOS QUE ERIZAN EL VELLO</h5>
-                        <p>
-                          ¿Estas pensando en ir a Milwaukee, el hogar natal de
-                          Harley-Davidson, en los próximos meses? Vive la experiencia de
-                          aquell...
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Creative . Design . Business</span>
+                            <span class="blog-color-primary">June 16, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>48 comments</span>
+                            <span>by Erick Giraldo</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
+                            <div class="blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1-3.webp" alt="post-img" class="img-fluid">
+                            </div>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">How can you apply Xtra Blog</h2>
+                        </a>                    
+                        <p class="blog-pt-30 ">
+                            You are <u>allowed</u> to convert this template as any kind of CMS theme or template for your custom website builder. 
+                            You can also use this for your clients. Thank you for choosing us.
                         </p>
-                        <button onclick="location.href='#'" target="_blank" type="button">
-                          Ver más
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Music . Audio</span>
+                            <span class="blog-color-primary">June 11, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>24 comments</span>
+                            <span>by Erick Giraldo</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
+                            <div class="blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1-4.webp" alt="post-img" class="img-fluid">
+                            </div>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">A little restriction to apply</h2>
+                        </a>                    
+                        <p class="blog-pt-30 ">
+                            You are <u>not allowed</u> to re-distribute this template as a downloadable ZIP file on any template collection
+                            website. This is strongly prohibited as we worked hard for this template. Please contact TemplateMo for more information.
+                        </p>
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Artworks . Design</span>
+                            <span class="blog-color-primary">June 4, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>72 comments</span>
+                            <span>by Erick Giraldo</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
+                            <div class="blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1-5.webp" alt="post-img" class="img-fluid">
+                            </div>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Color hexa values of Xtra Blog</h2>
+                        </a>                    
+                        <p class="blog-pt-30 ">
+                            If you wish to kindly support us, please contact us or contribute a small PayPal amount to info [at] templatemo.com that is helpful for us.
+                            <br>
+                            Title #099 New #0CC <br>
+                            <span class="blog-color-primary">Text #999 Line #CCC Next #0CC Prev #F0F0F0</span>
+                        </p>
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Creative . Video . Audio</span>
+                            <span class="blog-color-primary">May 31, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>84 comments</span>
+                            <span>by Erick Giraldo</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 blog-post">
+                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
+                            <div class="blog-post-link-inner">
+                                <img src="../assets/images/blog/blog-1-6.webp" alt="post-img" class="img-fluid">
+                            </div>
+                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Donec convallis varius risus</h2>
+                        </a>                    
+                        <p class="blog-pt-30 ">
+                            Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc vel turpis eget orci elementum cursus vitae in eros. Quisque vulputate nulla ut dolor consectetur luctus.
+                        </p>
+                        <div class="d-flex justify-content-between blog-pt-45">
+                            <span class="blog-color-primary">Visual . Artworks</span>
+                            <span class="blog-color-primary">June 16, 2020</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>96 comments</span>
+                            <span>by Erick Giraldo</span>
+                        </div>
+                    </article>
+                </div>
                 </div>
         </main>
       </div>
@@ -189,7 +223,7 @@
           ></a>
         </div>
         <p>© 2022. Designed by Erick Giraldo. All right reserved.</p>
-        <img src="../assets/images/logo.png" alt="" width="50px" />
+        <img src="../assets/images/logo.webp" alt="logo-footer" width="50px" />
       </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->
