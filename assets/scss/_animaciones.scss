@@ -1,7 +1,7 @@
 /* Asignamos la animacion para el logo y agregamos propiedades */
 
 .rebote {
-    animation: subir-bajar 0.5s alternate infinite ease-in;
+    animation: subir-bajar 0.80s alternate infinite ease-in;
   }
   
   /* Creamos la animación Rebote y transformacion  (con keyframes) */
@@ -11,12 +11,21 @@
       transform: translateY(-20%);
     }
   
+    25% {
+      transform: translateY(-10%);
+    }
+  
+  
     50% {
       transform: translateY(0%);
     }
   
     75% {
-      transform: skewX(-40deg);
+      transform: translateY(-10%);
+    }
+
+    100% {
+      transform: translateY(-20%);
     }
   }
   

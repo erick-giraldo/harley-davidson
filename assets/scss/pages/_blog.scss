@@ -1,60 +1,149 @@
-.blog-container {
-    overflow: auto;
-    position: relative;
-    color: #747474;
-    height: calc(100vh - 55px);
-  
-    .blog-referencia {
-      height: 200px;
-      display: flex;
-      align-items: center;
+/* Main */
+.main-container {
+  .blog-contenido {
+    @include styleMainGlobal (20px,auto,2rem,2rem,$border_main,$shadow_main);
+    /* Main BLog todos los post */
+    .blog-row {
+      max-width: initial;
+      justify-content: space-around;
+      .blog-post {
+        max-width: 470px;
+      
+        > p {
+          font-size: 19px;
+          line-height: 2em;
+          text-align: justify;
+        }
+
+        .effect-blog {
+          img {
+            max-width: none;
+            width: -webkit-calc(100% + 50px);
+            width: calc(100% + 50px);
+            opacity: 0.7;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(-40px, 0, 0);
+            transform: translate3d(-40px, 0, 0);
+          }
+        
+          &:hover img {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          .blog-new-badge {
+            top: 0;
+            right: 0px;
+            background-color: #e70505;
+            color: $color-white;
+            padding: 5px 20px;
+            font-weight: bold;
+            border-radius: 9px;
+          }
+        }
+        .blog-post-link {
+          display: initial;
+          position: relative;
+          cursor: pointer;
+          text-decoration: none;
+          .blog-post-link-inner {
+            overflow: hidden;
+            object-fit: cover;
+            border-radius: 20px;
+            top: 46px;
+          }
+          
+          .blog-post-link img {
+            position: relative;
+            display: block;
+            min-height: 100%;
+            opacity: 0.8;
+          }
+          .blog-post-title {
+            font-size: 1.7rem;
+            transition: all 0.3s ease;
+          }
+        }
+
+      }
     }
-  
-    .blog-entrada {
-      display: flex;
-      gap: 20px;
-      margin: 0;
-    }
-  
+
+  }
+}
+
+
+.blog-pt-20 {
+  padding-top: 20px;
+}
+
+.blog-pt-30 {
+  padding-top: 30px;
+}
+
+.blog-pt-45 {
+  padding-top: 45px;
+}
+
+.blog-pt-60 {
+  padding-top: 60px;
+}
+
+.blog-color-primary, span.blog-color-primary {
+  color: $color-text-secundario;
+}
+
+
+
+/*  Post */
+@media (max-width: $large) {
+  .row .blog-row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.blog-post-full {
+  max-width: 100%;
+  text-align: justify;
+}
+
+.blog-contenido .blog-img-bg-disable {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/**************** Para Tablet **********************/
+@media (max-width: $medium) {
+  .main-container {
     .blog-contenido {
-      background-color: $background_main;
-      gap: 20px;
-      height: auto;
       padding: 2rem;
-      border-radius: 20px;
+    }
+  }
+}
 
-      &  p {
-        text-align: justify;
-        line-height: 32px;
-      }
-    }
+/**************** Para Moviles **********************/
+@media (max-width: $small-blog) {
+  .blog-contenido .blog-img-bg {
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 20px;
+    background-image: url(/assets/images/blog/bg-post-movile.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
-  
 
-  
-  /**************** Para Tablet **********************/
-  @media (max-width: 991px) {
-    .blog-container {
-      .blog-contenido {
-        padding: 2rem;
-      }
-  
-      height: calc(100vh - 115px);
+  .blog-img-bg-disable {
+    display: none;
+  }
+}
+
+@media (max-width: $small) {
+  .main-container {
+    height: calc(100vh - 155px);
+    .blog-contenido {
+      padding: 2rem;
     }
   }
-  
-  /**************** Para Moviles **********************/
-  
-  @media (max-width: 430px) {
-    .blog-container {
-      height: calc(100vh - 155px);
-  
-      .blog-referencia {
-        height: 100px;
-      }
-  
-      .blog-contenido {
-        padding: 2rem;
-      }
-    }
-  }
+}
