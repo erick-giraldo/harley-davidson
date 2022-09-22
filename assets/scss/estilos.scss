@@ -3,7 +3,7 @@
 @import "./global/mixin";
 @import "./global/mapas";
 @import "./global/extend";
-
+@import "./global/whatsapp";
 
 @import "./global/cdn";
 @import "header";
@@ -23,3 +23,4 @@
 .hijo {
   height: calc(100vh - 55px);
 }
+

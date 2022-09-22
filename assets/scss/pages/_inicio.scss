@@ -10,6 +10,8 @@
 }
 
 .container-both {
+    display: flex;
+    align-items: center;
   .contenido-imagen {
     text-align: center;
   }
@@ -69,14 +71,15 @@
   }
 }
   /* Moviles */
-  @media (max-width: $sxxl) {
-    .container-both .contenido-imagen>img {
-      margin-top: 16rem !important;
-    }
-  }
+  // @media (max-width: $sxxl) {
+  //   .container-both .contenido-imagen>img {
+  //     margin-top: 16rem !important;
+  //   }
+  // }
 
   @media (max-width: $sxl) {
-    .container-both .contenido-imagen>img {
-      margin-top: 9rem;
+    .main .contenido{
+      display: flex;
+      justify-content: space-between;
     }
   }

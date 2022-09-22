@@ -6,12 +6,19 @@
             line-height: 32px;
         }
 
+        .p-titulo{
+            font-size: 1.5em;
+            margin: 0.67em 0;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
         .productos-section {
             gap: 28px;
             margin-left: 0px;
             display: flex;
-            justify-content: flex-start;
-
+            justify-content: center;
+            
             .card {
                 border: none;
                 border-radius: 3px;
@@ -37,7 +44,7 @@
         .productos-contenido {
             .productos-section {
                 display: flex;
-                flex-direction: row;
+                flex-direction: center;
             }
         }
     }
