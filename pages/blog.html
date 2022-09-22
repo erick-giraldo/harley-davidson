@@ -18,7 +18,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/estilos.css" />
     <link
       rel="shortcut icon"
       href="../assets/images/favicon.webp"
@@ -40,7 +40,9 @@
     <div class="container-fluid padre">
       <div class="row hijo">
         <header class="col-lg-2 col-md-12 col-sm-12 menu">
-          <img src="../assets/images/logo.webp" alt="logo" />
+          <a href="../index.html">
+            <img src="../assets/images/logo.webp" alt="logo" />
+          </a>
           <nav class="menu-container">
             <input type="checkbox" name="menuLite" id="menuLite" hidden="" />
             <ul>
@@ -62,146 +64,233 @@
           </nav>
         </header>
         <main class="col-lg-10 col-md-12 col-sm-12 main-container">
-                <div class="referencia">
-                  <nav aria-label="breadcrumb">
-                    <ol class="descolgado breadcrumb">
-                      <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Blog</li>
-                    </ol>
-                  </nav> 
+          <div class="referencia">
+            <nav aria-label="breadcrumb">
+              <ol class="descolgado breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="../index.html">Inicio</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="blog-contenido">
+            <div class="row blog-row">
+              <h1>CONTENIDO DESTACADO</h1>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-60"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1.webp"
+                      alt="blog-1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span class="rebote position-absolute blog-new-badge bounce"
+                    >New</span
+                  >
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    Rediseñadas, Reinventadas.
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  En el corazón de todos los modelos Softail encontrarás el
+                  motor Milwaukee-Eight V-Twin, que ofrece gran par motor para
+                  acelerar rápidamente. El sonido es puro, con un sordo rugido
+                  tremendamente gratificante. Echa un vistazo al número 1/2019
+                  de la revista HOG, en el que el socio del H.O.G.® Evgeniy
+                  Kislitsyn descubre los modelos más recientes.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary">Travel . Events</span>
+                  <span class="blog-color-primary">Agosto 24, 2022</span>
                 </div>
-                <div class="blog-contenido">
-                  <div class="row blog-row">
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-60 ">
-                            <div class="blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1.webp" alt="post-img" class="img-fluid">                            
-                            </div>
-                            <span class="rebote position-absolute blog-new-badge bounce">New</span>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Simple and useful HTML layout</h2>
-                        </a>                    
-                        <p class="blog-pt-30">
-                            There is a clickable image with beautiful hover effect and active title link for each post item. 
-                            Left side is a sticky menu bar. Right side is a blog content that will scroll up and down.
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Travel . Events</span>
-                            <span class="blog-color-primary">Agosto 24, 2022</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>36 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-60 ">
-                            <div class=" blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1-2.webp" alt="post-img" class="img-fluid">                            
-                            </div>
-                            <span class="rebote position-absolute blog-new-badge bounce">New</span>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Multi-purpose blog template</h2>
-                        </a>                    
-                        <p class="blog-pt-30 ">
-                            Xtra Blog is a multi-purpose HTML CSS template from TemplateMo website. 
-                            Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width.
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Creative . Design . Business</span>
-                            <span class="blog-color-primary">Agosto 16, 2022</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>48 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
-                            <div class="blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1-3.webp" alt="post-img" class="img-fluid">
-                            </div>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">How can you apply Xtra Blog</h2>
-                        </a>                    
-                        <p class="blog-pt-30 ">
-                            You are <u>allowed</u> to convert this template as any kind of CMS theme or template for your custom website builder. 
-                            You can also use this for your clients. Thank you for choosing us.
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Music . Audio</span>
-                            <span class="blog-color-primary">Julio 11, 2022</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>24 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
-                            <div class="blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1-4.webp" alt="post-img" class="img-fluid">
-                            </div>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">A little restriction to apply</h2>
-                        </a>                    
-                        <p class="blog-pt-30 ">
-                            You are <u>not allowed</u> to re-distribute this template as a downloadable ZIP file on any template collection
-                            website. This is strongly prohibited as we worked hard for this template. Please contact TemplateMo for more information.
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Artworks . Design</span>
-                            <span class="blog-color-primary">Agosto 24, 2022</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>72 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
-                            <div class="blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1-5.webp" alt="post-img" class="img-fluid">
-                            </div>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Color hexa values of Xtra Blog</h2>
-                        </a>                    
-                        <p class="blog-pt-30 ">
-                          If you wish to kindly support us, please contact us or contribute a small PayPal amount to info [at] templatemo.com that is helpful for us.
-                          If you wish to kindly support us, please contact us or contribute a small PayPal amount to info [at] templatemo.com that is helpful for us.
-                           
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Creative . Video . Audio</span>
-                            <span class="blog-color-primary">May 31, 2020</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>84 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 blog-post">
-                        <a href="post.html" class="effect-blog blog-post-link blog-pt-20">
-                            <div class="blog-post-link-inner">
-                                <img src="../assets/images/blog/blog-1-6.webp" alt="post-img" class="img-fluid">
-                            </div>
-                            <h2 class="blog-pt-30  blog-color-primary blog-post-title">Donec convallis varius risus</h2>
-                        </a>                    
-                        <p class="blog-pt-30 ">
-                            Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc vel turpis eget orci elementum cursus vitae in eros. Quisque vulputate nulla ut dolor consectetur luctus.
-                        </p>
-                        <div class="d-flex justify-content-between blog-pt-45">
-                            <span class="blog-color-primary">Visual . Artworks</span>
-                            <span class="blog-color-primary">June 16, 2020</span>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>96 comments</span>
-                            <span>by Erick Giraldo</span>
-                        </div>
-                    </article>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>36 comments</span>
+                  <span>by Erick Giraldo</span>
                 </div>
+              </article>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-60"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1-2.webp"
+                      alt="blog-1-2"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span class="rebote position-absolute blog-new-badge bounce"
+                    >New</span
+                  >
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    Salirse de las Típicas Rutas
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  Para los no iniciados, un viaje a Turquía puede evocar varios
+                  días de estancia en un hotel con inagotables reservas de
+                  comida y bebida y descansar en una piscina en compañía de
+                  otros veraneantes con elevadas dosis de alcohol. Yo viajé a
+                  Turquía en mi Harley-Davidson® con la intención de desmentir
+                  este deprimente mito y ver el país tal y como es en realidad.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary"
+                    >Creative . Design . Business</span
+                  >
+                  <span class="blog-color-primary">Agosto 16, 2022</span>
                 </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>48 comments</span>
+                  <span>by Erick Giraldo</span>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-20"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1-3.webp"
+                      alt="blog-1-3"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    Increíbles Fiordos
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  Buscas el mejor lugar del mundo para viajar en moto? Noruega
+                  es difícil de superar. Desde la increíble cantidad de
+                  estruendosas cascadas y espectaculares cumbres hasta los
+                  impresionantes fiordos, excelente gastronomía e increíbles
+                  puertos de montaña, este fascinante país ofrece algo para
+                  todos.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary">Music . Audio</span>
+                  <span class="blog-color-primary">Julio 11, 2022</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>24 comments</span>
+                  <span>by Erick Giraldo</span>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-20"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1-4.webp"
+                      alt="blog-1-4"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    En la península Ibérica
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  Maravillas de la naturaleza, dando la espalda al Atlántico,
+                  pusimos rumbo este hasta llegar un hostal en un antiguo molino
+                  de agua, a pocas millas al sur de Lugo. Ese día dejamos las
+                  motos pronto y nos relajamos sobre las piedras del río,
+                  disfrutando del silencio y la belleza del paisaje español.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary">Artworks . Design</span>
+                  <span class="blog-color-primary">Agosto 24, 2022</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>72 comments</span>
+                  <span>by Erick Giraldo</span>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-20"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1-5.webp"
+                      alt="blog-1-5"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    European bike week 2019 day 4
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  Más de 29.000 motos se dirigieron a la ciudad de Cascais para
+                  asistir a este evento gratuito y abierto que se celebra cada
+                  año en una parte diferente de Europa. Pilotos de Harley® de
+                  distimtos paises viajaron para participar en esta celebración
+                  anual de Harley-Davidson®, mezclándose y divirtiéndose con la
+                  población local.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary"
+                    >Creative . Video . Audio</span
+                  >
+                  <span class="blog-color-primary">May 31, 2022</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>84 comments</span>
+                  <span>by Erick Giraldo</span>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 blog-post">
+                <a
+                  href="post.html"
+                  class="effect-blog blog-post-link blog-pt-20"
+                >
+                  <div class="blog-post-link-inner">
+                    <img
+                      src="../assets/images/blog/blog-1-6.webp"
+                      alt="blog-1-6"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h2 class="blog-pt-30 blog-color-primary blog-post-title">
+                    H.O.G.® RALLY
+                  </h2>
+                </a>
+                <p class="blog-pt-30">
+                  El 28º european h.o.g. Rally, celebrado el fin de semana del
+                  13 al 16 de junio de 2019, ha vuelto a saldarse con un
+                  fenomenal éxito. Más de 50.000 asistentes de 32 países se
+                  desplazaron hasta la costa atlántica de portugal para
+                  disfrutar de un largo fin de semana de música y motos.
+                </p>
+                <div class="d-flex justify-content-between blog-pt-45">
+                  <span class="blog-color-primary">Visual . Artworks</span>
+                  <span class="blog-color-primary">June 16, 2022</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>96 comments</span>
+                  <span>by Erick Giraldo</span>
+                </div>
+              </article>
+            </div>
+          </div>
         </main>
       </div>
     </div>
@@ -224,6 +313,37 @@
         <p>© 2022. Designed by Erick Giraldo. All right reserved.</p>
         <img src="../assets/images/logo.webp" alt="logo-footer" width="50px" />
       </footer>
+    </div>
+    <!-- Chat Whatsapp-->
+    <div class="btn-whatsapp">
+      <img
+        class="whatsapp-img"
+        src="../assets/images/Iconos/whatsapp.webp"
+        alt="whatsapp"
+      />
+      <div class="wcs_button_label">Contáctanos</div>
+      <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_popup">
+          <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+          </div>
+          <div class="wcs_popup_header">
+            <span class="bi bi-whatsapp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></span>
+            <strong>Servicio al cliente</strong>
+            <div class="wcs_popup_header_description">
+              ¿Necesidad de ayuda? Chatea con nosotros en Whatsapp
+            </div>
+          </div>
+          <div class="wcs_popup_input" data-number="51945970045">
+            <input type="text" placeholder="Hola!! Quisiera información!!" />
+            <a href="https://wa.link/ofu5ri" target="_blank">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script

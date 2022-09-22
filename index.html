@@ -8,7 +8,9 @@
     <!-- Metas -->
     <meta
       name="description"
-      content="¡Consulte nuestro blog para obtener artículos interesantes e informativos sobre motocicletas! ¡Entonces, visítenos cerca de Buffalo, NY para obtener más información!"
+      content="¡Consulte nuestro blog para obtener artículos interesantes e
+      informativos sobre motocicletas! ¡Entonces, visítenos cerca de Buffalo, NY
+      para obtener más información!"
     />
     <meta name="author" content="Erick Giraldo" />
     <!-- CSS only -->
@@ -18,13 +20,14 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
     <link
       rel="shortcut icon"
       href="../assets/images/favicon.webp"
       type="image/x-icon"
     />
   </head>
+
   <body>
     <!-- Loading.... -->
     <div class="load-7">
@@ -39,7 +42,9 @@
     <div class="container-fluid padre">
       <div class="row">
         <header class="col-lg-2 col-md-12 menu">
-          <img src="./assets/images/logo.webp" alt="logo" />
+          <a href="/">
+            <img src="./assets/images/logo.webp" alt="logo" />
+          </a>
           <nav class="menu-container">
             <input type="checkbox" name="menuLite" id="menuLite" hidden="" />
             <ul>
@@ -80,11 +85,11 @@
                 </ul>
                 <div class="btn-container">
                   <button
-                  class="btn-hover btn-inicio"
-                  onclick="location.href='./pages/contacto.html#formulario'"
-                >
-                  Contacto
-                </button>
+                    class="btn-hover btn-inicio"
+                    onclick="location.href='./pages/contacto.html#formulario'"
+                  >
+                    Contacto
+                  </button>
                 </div>
               </div>
               <div class="container col-lg-6 col-md-12 contenido-imagen">
@@ -119,6 +124,37 @@
         <p>© 2022. Designed by Erick Giraldo. All right reserved.</p>
         <img src="./assets/images/logo.webp" alt="logo-footer" width="50px" />
       </footer>
+    </div>
+    <!-- Chat Whatsapp-->
+    <div class="btn-whatsapp">
+      <img
+        class="whatsapp-img"
+        src="./assets/images/Iconos/whatsapp.webp"
+        alt="whatsapp"
+      />
+      <div class="wcs_button_label">Contáctanos</div>
+      <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_popup">
+          <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+          </div>
+          <div class="wcs_popup_header">
+            <span class="bi bi-whatsapp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></span>
+            <strong>Servicio al cliente</strong>
+            <div class="wcs_popup_header_description">
+              ¿Necesidad de ayuda? Chatea con nosotros en Whatsapp
+            </div>
+          </div>
+          <div class="wcs_popup_input" data-number="51945970045">
+            <input type="text" placeholder="Hola!! Quisiera información!!" />
+            <a href="https://wa.link/ofu5ri" target="_blank">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script

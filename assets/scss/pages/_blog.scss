@@ -104,6 +104,12 @@
   hr.blog-hr-primary {
     border-top: 5px solid #0CC;
   }
+  .blog-comment-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .blog-post-sidebar {
@@ -112,6 +118,10 @@
     li {
       a {
         text-decoration: none;
+        color:#0CC;
+        &:hover{
+          color: $color-text-secundario   ;
+        }
       }
     }
   }
@@ -172,9 +182,18 @@
 @media (min-width: $medium-blog){
   .blog-post {
     >p {
-      max-height: 222px;
+      height: 222px;
     }
 }
+}
+
+@media (max-width: $medium-blog){
+  .blog-post-sidebar {
+    text-align: center;
+    .blog-category-list {
+      padding:0;
+    }
+  }
 }
 
 /**************** Para Moviles **********************/
