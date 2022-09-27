@@ -31,12 +31,18 @@
     }
   }
 
-  .menuIcon {
+  .menu-icon {
     display: none;
   }
 }
 
 /* Tablet y Responsive */
+@media (min-width: 994px) {
+  .menu img {
+    width: 150px;
+    align-self: center;
+  }
+}
 
 @media (max-width: 993px) {
   .menu {
@@ -74,7 +80,7 @@
       border-radius: 5px;
     }
 
-    .menuIcon {
+    .menu-icon {
       display: block;
       width: 27px;
       margin: 5px;
@@ -83,9 +89,4 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .menu img {
-    width: 150px;
-    align-self: center;
-  }
-}
+

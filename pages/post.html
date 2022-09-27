@@ -20,10 +20,17 @@
 <body>
   <!-- Loading.... -->
   <div class="load-7">
-    <div>
-      <h2>Cargando...</h2>
-      <div class="square-holder">
-        <div class="square"></div>
+    <div id="app-preloader">
+      <div class="fade-in-image">
+        <img src="../assets/images/logo.webp" width="150px" alt="logo loading" />
+      </div>
+      <div class="preloader-title"></div>
+      <div class="preloader-spinner">
+        <svg class="preloader-spinner-icon" viewBox="0 0 24 24">
+          <path
+            d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z"
+            fill="none" stroke-linecap="round" />
+        </svg>
       </div>
     </div>
   </div>
@@ -46,7 +53,7 @@
             <li><a href="./contacto.html">contacto</a></li>
           </ul>
           <label for="menuLite">
-            <img class="menuIcon" src="../assets/images/menu-lite.webp" alt="menuLite" />
+            <img class="menu-icon" src="../assets/images/menu-lite.webp" alt="menuLite" />
           </label>
         </nav>
       </header>

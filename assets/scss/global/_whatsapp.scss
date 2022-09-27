@@ -57,6 +57,9 @@
     font-weight: 500;
     transition: .3s ease all;
   }
+  .wcs_button_label{
+    pointer-events: none;
+  }
   .whatsapp-img {
     width: 3rem; 
     &:hover{
