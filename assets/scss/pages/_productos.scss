@@ -18,6 +18,10 @@
             margin-left: 0px;
             display: flex;
             justify-content: center;
+
+            .modal-dialog {
+                margin-top: 16rem;
+            }
             
             .card {
                 border: none;
