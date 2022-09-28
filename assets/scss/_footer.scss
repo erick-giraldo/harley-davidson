@@ -22,7 +22,7 @@
 
 /* Tablet y Movil*/
 
-@media (max-width: 993px) {
+@media (max-width:$medium) {
   .footer {
     display: flex;
     align-items: center;

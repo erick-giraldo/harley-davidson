@@ -41,7 +41,7 @@
 
 /* Moviles*/
 %referencia-movile {
-    @media (max-width: 991px) {
+    @media (max-width: $medium) {
         height: 100px;
     }
 }

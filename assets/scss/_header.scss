@@ -37,21 +37,20 @@
 }
 
 /* Tablet y Responsive */
-@media (min-width: 994px) {
+@media (min-width: $mins) {
   .menu img {
     width: 150px;
     align-self: center;
   }
 }
 
-@media (max-width: 993px) {
+@media (max-width: $medium) {
   .menu {
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     img {
       width: 65px;
       height: 60px;

@@ -50,9 +50,9 @@
 
 
 /* Tablet y Responsive */
-@media (max-width: 993px) {
+@media (max-width: $medium) {
   .main {
-    height: calc(100vh - 115px);
+   height: calc(100vh - 115px);
 
     .contenido {
       padding: 20px;
