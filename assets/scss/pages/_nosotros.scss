@@ -1,36 +1,38 @@
 .main-container {
     .nosotros-contenido {
         .nosotros-containerB {
-          img {
-            position: absolute;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 20px;
-            top: 46px;
-            right: 33px;
-            width: auto;
-          }
-      
-          > h3 {
-            margin: 0.87em 0 0.87em 0;
-          }
+            img {
+                position: absolute;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                top: 46px;
+                right: 33px;
+                width: auto;
+            }
+
+            >h3 {
+                margin: 0.87em 0 0.87em 0;
+            }
         }
-      
+
         p {
-          text-align: justify;
-          line-height: 32px;
+            text-align: justify;
+            line-height: 32px;
         }
-      }
-      
+    }
+
     .nosotros-contenido {
-        @include styleMainGlobal (0,auto,2rem,2rem,$border_main,$shadow_main);
+        @include styleMainGlobal (0, auto, 2rem, 2rem, $border_main, $shadow_main);
+
         .nosotros-containerB {
-            .nosotros-sub{
+            .nosotros-sub {
                 margin: 0.87em 0 0.87em 0;
                 font-size: calc(1.3rem + .6vw);
                 font-weight: 500;
                 line-height: 1.2;
             }
+
             >h3 {
                 margin: 0.87em 0 0.87em 0;
             }

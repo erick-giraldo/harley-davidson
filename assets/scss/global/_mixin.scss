@@ -17,7 +17,12 @@ html {
 
 /*mixin con parametros */
 
-@mixin styleMainGlobal($gap-M, $height-M, $padding-M, $mbottom-M, $radius-M, $shadow-M) {
+@mixin styleMainGlobal($gap-M,
+    $height-M,
+    $padding-M,
+    $mbottom-M,
+    $radius-M,
+    $shadow-M) {
     gap: $gap-M;
     height: $height-M;
     padding: $padding-M;

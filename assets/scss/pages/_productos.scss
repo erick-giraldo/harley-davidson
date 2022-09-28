@@ -1,12 +1,13 @@
 .main-container {
     .productos-contenido {
-        @include styleMainGlobal (20px,auto,2rem,2rem,$border_main,$shadow_main);
+        @include styleMainGlobal (20px, auto, 2rem, 2rem, $border_main, $shadow_main);
+
         >p {
             text-align: justify;
             line-height: 32px;
         }
 
-        .p-titulo{
+        .p-titulo {
             font-size: 1.5em;
             margin: 0.67em 0;
             font-weight: 500;
@@ -22,13 +23,14 @@
             .modal-dialog {
                 margin-top: 16rem;
             }
-            
+
             .card {
                 border: none;
                 border-radius: 3px;
                 box-shadow: 0px 20px 44px -6px rgba(0, 0, 0, 0.06);
-                .card-body{
-                    .card-title{
+
+                .card-body {
+                    .card-title {
                         font-size: 1.25rem;
                         margin-top: 0;
                         margin-bottom: 0.5rem;
