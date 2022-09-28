@@ -35,7 +35,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -52,7 +51,6 @@
     }
 }
 
-
 .padre {
     .hijo {
         .main-container {
@@ -62,6 +60,5 @@
         .referencia {
             @extend %referencia-movile;
         }
-
     }
 }

@@ -1,6 +1,7 @@
 /* Variables Globales */
 
-$font-global: 'Roboto', sans-serif;
+$font-global: 'Roboto',
+sans-serif;
 $color-text-global: #fff;
 $font-size-flobal: 16px;
 $line-h:2rem;
@@ -17,10 +18,13 @@ $preload-spinner-size:32px;
 $preload-spinner-width:3px;
 
 
- /* Boton Inicio */
+/* Boton Inicio */
 
-$btn_shadow:rbga(236, 116, 149,  0.75);
-$btn_linear:#ed6ea0, #ec8c69, #f7186a, #FBB03B;
+$btn_shadow:rbga(236, 116, 149, 0.75);
+$btn_linear:#ed6ea0,
+#ec8c69,
+#f7186a,
+#FBB03B;
 
 /* Shadow Main */
 

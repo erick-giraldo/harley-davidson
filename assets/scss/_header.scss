@@ -4,16 +4,19 @@
   flex-direction: column;
   justify-content: space-around;
   z-index: 2;
-  >a{
+
+  >a {
     align-self: center;
   }
 }
+
 /*MAP - GET */
 .menu-container {
-  ul > li {
+  ul>li {
     list-style: none;
     padding: 10px 0;
-    > a {
+
+    >a {
       text-decoration: map-get($menuText, textDecoration);
       font-size: map-get($menuText, fontSize);
       display: inline-block;
@@ -51,17 +54,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     img {
       width: 65px;
       height: 60px;
     }
   }
 
-  .menu-container > ul {
+  .menu-container>ul {
     display: none;
   }
 
-  #menuLite:checked + ul {
+  #menuLite:checked+ul {
     display: block;
     position: absolute;
     left: 0;
@@ -87,5 +91,3 @@
     }
   }
 }
-
-

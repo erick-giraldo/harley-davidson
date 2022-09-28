@@ -78,22 +78,69 @@
 }
 
 
-.blog-pt-20 {padding-top: 20px;}
-.blog-pt-30 {padding-top: 30px;}
-.blog-pt-45 {padding-top: 45px;}
-.blog-pt-60 {padding-top: 60px;}
-.blog-mb-45 {margin-bottom: 45px;}
-.blog-mb-40 {margin-bottom: 40px;}
-.blog-mb-45 {margin-bottom: 45px;}
-.blog-mb-55 {margin-bottom: 55px;}
-.blog-mb-60 {margin-bottom: 60px;}
-.blog-mb-65 {margin-bottom: 65px;}
-.blog-mb-75 {margin-bottom: 75px;}
-.blog-mb-80 {margin-bottom: 80px;}
-.blog-mb-120 {margin-bottom: 120px;}
-.blog-mt-40 {margin-top: 40px;}
-.blog-mt-100 {margin-top: 100px;}
-.blog-mr-20 {margin-right: 20px;}
+.blog-pt-20 {
+  padding-top: 20px;
+}
+
+.blog-pt-30 {
+  padding-top: 30px;
+}
+
+.blog-pt-45 {
+  padding-top: 45px;
+}
+
+.blog-pt-60 {
+  padding-top: 60px;
+}
+
+.blog-mb-45 {
+  margin-bottom: 45px;
+}
+
+.blog-mb-40 {
+  margin-bottom: 40px;
+}
+
+.blog-mb-45 {
+  margin-bottom: 45px;
+}
+
+.blog-mb-55 {
+  margin-bottom: 55px;
+}
+
+.blog-mb-60 {
+  margin-bottom: 60px;
+}
+
+.blog-mb-65 {
+  margin-bottom: 65px;
+}
+
+.blog-mb-75 {
+  margin-bottom: 75px;
+}
+
+.blog-mb-80 {
+  margin-bottom: 80px;
+}
+
+.blog-mb-120 {
+  margin-bottom: 120px;
+}
+
+.blog-mt-40 {
+  margin-top: 40px;
+}
+
+.blog-mt-100 {
+  margin-top: 100px;
+}
+
+.blog-mr-20 {
+  margin-right: 20px;
+}
 
 .blog-color-primary {
   color: $color-text-secundario;
@@ -104,7 +151,8 @@
   hr.blog-hr-primary {
     border-top: 5px solid #0CC;
   }
-  .blog-comment-image{
+
+  .blog-comment-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,18 +163,21 @@
 .blog-post-sidebar {
   .blog-category-list {
     list-style: none;
+
     li {
       a {
         text-decoration: none;
-        color:#0CC;
-        &:hover{
-          color: $color-text-secundario   ;
+        color: #0CC;
+
+        &:hover {
+          color: $color-text-secundario;
         }
       }
     }
   }
-  >a{
-    text-decoration: none;  
+
+  >a {
+    text-decoration: none;
   }
 }
 
@@ -179,19 +230,20 @@
   }
 }
 
-@media (min-width: $medium-blog){
+@media (min-width: $medium-blog) {
   .blog-post {
     >p {
       height: 222px;
     }
-}
+  }
 }
 
-@media (max-width: $medium-blog){
+@media (max-width: $medium-blog) {
   .blog-post-sidebar {
     text-align: center;
+
     .blog-category-list {
-      padding:0;
+      padding: 0;
     }
   }
 }

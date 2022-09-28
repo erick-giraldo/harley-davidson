@@ -1,11 +1,13 @@
 .main-container {
     .contacto-contenido {
-    @include styleMainGlobal (0,auto,2rem,2rem,$border_main,$shadow_main);
+        @include styleMainGlobal (0, auto, 2rem, 2rem, $border_main, $shadow_main);
+
         .contacto-containerA {
             & p {
                 text-align: justify;
                 line-height: 32px;
             }
+
             .contacto-btn {
                 padding-top: 10px;
                 text-align: center;
@@ -18,13 +20,14 @@
             .icono-ubuicacion {
                 display: flex;
                 margin-bottom: 1rem;
+
                 >p {
                     line-height: normal;
                     margin-bottom: 0;
                 }
             }
 
-             & iframe {
+            & iframe {
                 width: 100%;
                 border-radius: 20px;
                 height: 400px;

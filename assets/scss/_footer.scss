@@ -4,18 +4,19 @@
   align-items: center;
   background-color: $background_header_footer;
   height: 55px;
+
   .redes {
     margin-left: 10px;
     font-size: 20px;
     letter-spacing: 8px;
 
-    > a {
+    >a {
       text-decoration: none;
       color: #fff;
     }
   }
 
-  > img {
+  >img {
     margin-right: 10px;
   }
 }
@@ -33,6 +34,7 @@
     }
 
     > {
+
       p,
       img {
         display: none;
